@@ -45,7 +45,7 @@ export default {
     onSearch() {
       this.results = [];
       this.status = "Checking...";
-      //Search reuest to people API 
+      //Search request to people API 
       axios
         .get(`https://swapi.co/api/people/?search=${this.searchInput}`)
         .then(res => {
@@ -58,7 +58,7 @@ export default {
               this.results.push(obj);
             });
           }
-          //Search reuest to planets API
+          //Search request to planets API
           axios
             .get(`https://swapi.co/api/planets/?search=${this.searchInput}`)
             .then(res => {
