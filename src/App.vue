@@ -31,7 +31,6 @@
 <script>
 import Plot from "./components/Plot";
 import NewPlotForm from "./components/NewPlotForm";
-import axios from "axios";
 import { bus } from "./main.js";
 
 export default {
